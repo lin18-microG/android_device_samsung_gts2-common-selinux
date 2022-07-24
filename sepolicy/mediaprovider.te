@@ -1,3 +1,4 @@
 #============= mediaprovider ==============
 allow mediaprovider sysfs:file r_file_perms;
-
+allow mediaprovider rootfs:dir { open read setattr };
+allow mediaprovider rootfs:file { open read };

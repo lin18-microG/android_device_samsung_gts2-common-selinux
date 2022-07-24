@@ -43,4 +43,5 @@ allow init system_server:binder transfer;
 allow init system_server:unix_stream_socket read;
 allow init vendor_file:file execute_no_trans;
 allow init vndbinder_device:chr_file rw_file_perms;
-
+allow init proc_overcommit_memory:file read;
+allow init socket_device:sock_file { create setattr unlink };

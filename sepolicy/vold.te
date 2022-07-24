@@ -1,4 +1,4 @@
 #============= vold ==============
 allow vold efs_file:dir { ioctl open read };
 allow vold hal_bootctl_hwservice:hwservice_manager find;
-
+allow vold rootfs:dir setattr;
