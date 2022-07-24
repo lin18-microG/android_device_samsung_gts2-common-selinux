@@ -1,3 +1,0 @@
-#============= mediaserver ==============
-allow mediaserver exported_camera_prop:file r_file_perms;
-
