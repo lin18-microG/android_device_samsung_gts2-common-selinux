@@ -1,0 +1,6 @@
+allow cbd tmpfs:blk_file rw_file_perms;
+allow cbd block_device:blk_file { open read };
+allow cbd proc_overcommit_memory:file { open read };
+allow cbd radio_prop:property_service set;
+allow cbd sysfs:dir { open read };
+allow cbd sysfs:file { open read };

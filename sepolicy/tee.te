@@ -8,4 +8,4 @@ allow tee system_prop:property_service set;
 # TODO figure this out
 # W McDaemon.Server: type=1400 audit(0.0:70): avc: denied { search } for name="prov" dev="mmcblk0p3" ino=21 scontext=u:r:tee:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir   
 allow tee unlabeled:dir search;
-
+allow tee tee_prop:property_service set;
