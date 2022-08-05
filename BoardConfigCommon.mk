@@ -71,6 +71,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/universal5433
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_LINUX_KERNEL_VERSION := 3.10
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Ant+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -211,6 +212,10 @@ TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5433
+
+# has to be included before BOARD_SEPOLICY_DIRS
+include device/lineage/sepolicy/exynos/sepolicy.mk
+include device/samsung_slsi/sepolicy/sepolicy.mk
 
 # SELinux
 BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
