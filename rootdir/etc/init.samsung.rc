@@ -169,6 +169,8 @@ on init
     # disable klogd to avoid interrupting 'cat /proc/kmsg' by reading /proc/kmsg simultaneously
     setprop logd.kernel false
 
+    chown system radio /sys/class/sec/sec_key/hall_irq_ctrl
+
 on post-fs
     # mobicore
     setprop sys.mobicoredaemon.enable stopped
