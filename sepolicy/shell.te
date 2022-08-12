@@ -6,3 +6,4 @@ allow shell mirror_data_file:dir getattr;
 allow shell postinstall_mnt_dir:dir getattr;
 allow shell rootfs:file getattr;
 allow shell kernel:system syslog_read;
+allow shell proc:file getattr;
