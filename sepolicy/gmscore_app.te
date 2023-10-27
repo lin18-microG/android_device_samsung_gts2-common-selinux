@@ -12,3 +12,4 @@ allow gmscore_app bluetooth_prop:file { open getattr };
 allow gmscore_app bootloader_boot_reason_prop:file { open getattr};
 allow gmscore_app boottime_prop:file { open getattr };
 allow gmscore_app boottime_public_prop:file open;
+allow gmscore_app exported_camera_prop:file read;
