@@ -220,6 +220,8 @@ include device/samsung_slsi/sepolicy/sepolicy.mk
 # SELinux
 BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
 BOARD_SEPOLICY_DIRS += device/samsung/gts2-common/sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/samsung/gts2-common/sepolicy/private
+
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sensors
