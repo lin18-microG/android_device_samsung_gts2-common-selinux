@@ -618,9 +618,9 @@ on shutdown
     # Do not set any USB mode while charging
     # setprop sys.usb.config charging
 
-on property:sys.mobicoredaemon.enable=true
-    start cs_service
-    write /proc/iccc_ready 1
+# on property:sys.mobicoredaemon.enable=true
+#    start cs_service
+#    write /proc/iccc_ready 1
 
 # GPS
 service gpsd /vendor/bin/gpsd -c /vendor/etc/gps.xml
