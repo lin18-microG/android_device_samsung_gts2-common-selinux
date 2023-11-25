@@ -22,7 +22,7 @@ on init
     mkdir /storage/emulated 0555 root root
 
     # Support legacy paths
-    symlink /sdcard /mnt/sdcard
+    # symlink /sdcard /mnt/sdcard
 
     export EXTERNAL_STORAGE /sdcard
 
@@ -37,18 +37,18 @@ on init
 
     export SECONDARY_STORAGE /storage/extSdCard
 
-    mkdir /storage/extSdCard 0700 root root
-    mkdir /storage/UsbDriveA 0700 root root
-    mkdir /storage/UsbDriveB 0700 root root
-    mkdir /storage/UsbDriveC 0700 root root
-    mkdir /storage/UsbDriveD 0700 root root
-    mkdir /storage/UsbDriveE 0700 root root
-    mkdir /storage/UsbDriveF 0700 root root
+    # mkdir /storage/extSdCard 0700 root root
+    # mkdir /storage/UsbDriveA 0700 root root
+    # mkdir /storage/UsbDriveB 0700 root root
+    # mkdir /storage/UsbDriveC 0700 root root
+    # mkdir /storage/UsbDriveD 0700 root root
+    # mkdir /storage/UsbDriveE 0700 root root
+    # mkdir /storage/UsbDriveF 0700 root root
 
-    symlink /sdcard1 /storage/sdcard1
-    symlink /sdcard1 /external_sd
+    # symlink /sdcard1 /storage/sdcard1
+    # symlink /sdcard1 /external_sd
 
-    symlink /data/app /factory
+    # symlink /data/app /factory
 
 
     symlink /dev/block/platform/15540000.dwmmc0/by-name/RADIO /dev/mbin0
@@ -552,7 +552,7 @@ on late-fs
      write /sys/class/mdnie/mdnie/scenario 0
 
 # Copy DRM Key
-    copy /system/app/wv.keys /factory/wv.keys
+    # copy /system/app/wv.keys /factory/wv.keys
 
 # Permission for DRM Key
     chmod 0644 /factory/wv.keys
