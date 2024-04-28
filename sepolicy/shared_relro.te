@@ -1,3 +1,2 @@
 #============= shared_relro ==============
 allow shared_relro sysfs:file { getattr open read };
-
