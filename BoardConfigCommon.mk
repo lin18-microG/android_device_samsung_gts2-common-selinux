@@ -144,7 +144,7 @@ TARGET_USES_ION := true
 # Hidl
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
-			   
+ 
 # Lineage hardware
 ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 JAVA_SOURCE_OVERLAYS := \
@@ -233,9 +233,9 @@ TARGET_LD_SHIM_LIBS := \
 # Legacy BLOB Support
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/hw/rild=27
-	
+
 # Network Routing
-TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true	
+TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 
 # WFD
 BOARD_USES_WFD := true
