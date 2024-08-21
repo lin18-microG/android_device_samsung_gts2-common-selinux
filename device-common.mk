@@ -296,3 +296,6 @@ $(call inherit-product, hardware/samsung_slsi/exynos5433/exynos5433.mk)
 
 # Vendor
 $(call inherit-product, vendor/samsung/gts2-common/gts2-common-vendor.mk)
+
+# GPS rollover fix
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.lineage.gpsrollover=Y
